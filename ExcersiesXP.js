@@ -96,9 +96,15 @@ if(promptFromUser % 2 == 0){
 let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
 
 
-
-if(users){
-    console.log("you are online");
-}else{
+if(users === []){
     console.log("no one is online");
 }
+else if(users.length === 0 ){
+    console.log(`${users[0]} is online`);
+}else if(users.length === 2){
+    console.log(`${users[0]} and ${users[1]} are online`);
+}
+
+
+
+
